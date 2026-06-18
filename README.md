@@ -6,13 +6,18 @@ A full-stack Security Orchestration, Automation and Response platform built to d
 
 This project was built as a graduation/PFE project simulating a real-world SOC environment for a fictional organization, integrating several industry-standard security tools into a single orchestration layer.
 
-> **Note:** This repository contains documentation and architecture only. Source code is not published as this was developed for academic evaluation and contains environment-specific credentials and infrastructure details.
+> **Note:** This repository contains documentation and architecture only. The source code is not publicly available because this is an internal project intended for implementation. It contains proprietary business logic, environment-specific configurations, and infrastructure details that are not suitable for public release.
 
 ---
 
 ## What it does
 
 The platform ingests security events from three independent sources, correlates them into attack campaigns, asks a locally-hosted LLM to produce a structured threat analysis, cross-references indicators against threat intelligence, and gives a SOC analyst a guided, auditable response workflow that ends in a fully documented case.
+
+![SOAR detection-to-response pipeline](./assets/diagram.png)
+
+
+
 
 | Module | Data source | Detection logic |
 |---|---|---|
