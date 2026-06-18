@@ -10,9 +10,7 @@ This project was built as a graduation/PFE project simulating a real-world SOC e
 
 ---
 
-## What it does
-
-The platform ingests security events from three independent sources, correlates them into attack campaigns, asks a locally-hosted LLM to produce a structured threat analysis, cross-references indicators against threat intelligence, and gives a SOC analyst a guided, auditable response workflow that ends in a fully documented case.
+## Architecture overview
 
 ![SOAR detection-to-response pipeline](./assets/diagram.png)
 
