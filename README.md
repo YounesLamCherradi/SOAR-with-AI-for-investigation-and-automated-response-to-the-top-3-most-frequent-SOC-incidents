@@ -3,7 +3,7 @@
 
 A full-stack Security Orchestration, Automation and Response platform built to demonstrate end-to-end SOC workflows: detection, AI-assisted triage, threat intelligence enrichment, and automated response — across phishing email, web application attacks, and Active Directory threats.  A full walkthrough of the platform in action is available here: [Demo video](https://www.youtube.com/watch?v=-YEg57C7JsY)
 
-This project was built as a graduation/PFE project simulating a real-world SOC environment for a fictional organization, integrating several industry-standard security tools into a single orchestration layer.
+This project was built as a PFE (end-of-study project) in collaboration with **DXC Technology Morocco**, simulating a real-world SOC environment and integrating several industry-standard security tools into a single orchestration layer.
 
 > **Note:** This repository contains documentation and architecture only. The source code is not publicly available because this is an internal project intended for implementation. It contains proprietary business logic, environment-specific configurations, and infrastructure details that are not suitable for public release.
 
