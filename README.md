@@ -1,7 +1,7 @@
 ![SOAR detection-to-response pipeline](./assets/title.png)
 
 
-A full-stack Security Orchestration, Automation and Response platform built to demonstrate end-to-end SOC workflows: detection, AI-assisted triage, threat intelligence enrichment, and automated response — across phishing email, web application attacks, and Active Directory threats.  A full walkthrough of the platform in action is available here: [Demo video](https://youtube.com/your-video-link)
+A full-stack Security Orchestration, Automation and Response platform built to demonstrate end-to-end SOC workflows: detection, AI-assisted triage, threat intelligence enrichment, and automated response — across phishing email, web application attacks, and Active Directory threats.  A full walkthrough of the platform in action is available here: [Demo video](https://www.youtube.com/watch?v=-YEg57C7JsY)
 
 This project was built as a graduation/PFE project simulating a real-world SOC environment for a fictional organization, integrating several industry-standard security tools into a single orchestration layer.
 
@@ -93,4 +93,4 @@ Mean time to respond (MTTR) was tracked across all three modules against a manua
 
 The platform ships with simulator scripts (not included in this repo) that generate realistic, multi-stage attack campaigns against each module — multi-vector web attacks from several attacker IPs, a mixed batch of phishing and legitimate emails using real-but-defanged malicious indicators, and brute-force/credential-attack campaigns against Active Directory — to demonstrate the full detect → correlate → analyze → enrich → respond → document loop without requiring a live attacker.
 
-A full walkthrough of the platform in action is available here: [Demo video](https://youtube.com/your-video-link)
+A full walkthrough of the platform in action is available here: [Demo video](https://www.youtube.com/watch?v=-YEg57C7JsY)
