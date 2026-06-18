@@ -85,15 +85,8 @@ Mean time to respond (MTTR) was tracked across all three modules against a manua
 
 ## Tech stack
 
-- **Backend:** Python, Django, Django Channels (ASGI / WebSockets)
-- **AI:** Locally-hosted instruction-tuned LLM (Llama 3.1) for campaign analysis, sentence-embedding model for supporting semantic features
-- **Case management:** TheHive
-- **Sandboxed analysis:** Cortex (multi-analyzer IOC enrichment)
-- **Threat intelligence:** MISP
-- **Log shipping:** Winlogbeat → Logstash for Windows Event Log forwarding
-- **Remote execution:** WinRM for live Active Directory containment actions
-- **Frontend:** Server-rendered dashboard with vanilla JS + WebSocket client, real-time charts and force-directed graph visualizations
-- **Infrastructure:** Multi-host deployment on AWS EC2 (SOAR core, TheHive, Cortex, MISP, mail capture, and AD lab each on separate instances)
+![SOAR detection-to-response pipeline](./assets/staack.png)
+
 
 ---
 
