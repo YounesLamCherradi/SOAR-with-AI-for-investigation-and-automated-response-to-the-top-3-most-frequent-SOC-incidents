@@ -14,7 +14,7 @@ This project was built as a graduation/PFE project simulating a real-world SOC e
 
 ![SOAR detection-to-response pipeline](./assets/diagram.png)
 
-![SOAR detection-to-response pipeline](./assets/tools_stack_overview.png)
+![SOAR detection-to-response pipeline](./assets/tools-stack.png)
 
 ---
 
