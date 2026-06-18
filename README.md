@@ -57,7 +57,7 @@ The backend is a Django application using an ASGI server for real-time delivery;
 
 **Analyst.** The day-to-day working surface — a personal queue split by module, a campaign or alert detail panel carrying the AI analysis and threat-intel hits, and the gated assign → verdict → contain → close sequence described above.
 
-![Analyst view](./assets/analyst-views.png)
+![Analyst view](./assets/analyst-view.png)
 
 **Admin / supervisor.** A separate cross-module dashboard for team leads: KPIs, per-analyst load and MTTR, an unassigned-work queue for reassignment, a full audit trail, and health checks on the integrated services.
 
