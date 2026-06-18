@@ -33,7 +33,7 @@ The backend is a Django application using an ASGI server for real-time delivery;
 
 **Correlation engine.** Raw events are grouped by source indicator (attacking IP) within a rolling time window. Once a source crosses a minimum event threshold, the correlator assembles a campaign summary and hands it to the AI analysis layer. Re-analysis is triggered at increasing event counts so long-running campaigns get progressively richer assessments rather than one static verdict.
 
-**AI threat analysis.** A locally-hosted instruction-tuned LLM is prompted with the structured campaign data and asked to return four things in a fixed format: a plain-language summary of attacker intent, the corresponding Cyber Kill Chain stage, a prediction of the attacker's likely next move, and a concrete recommended action. This keeps the model's output both human-readable and machine-parseable, since the same text is later embedded verbatim into the case record.
+**AI threat analysis.** LLM is prompted with the structured campaign data and asked to return four things in a fixed format: a plain-language summary of attacker intent, the corresponding Cyber Kill Chain stage, a prediction of the attacker's likely next move, and a concrete recommended action. This keeps the model's output both human-readable and machine-parseable, since the same text is later embedded verbatim into the case record.
 
 **Threat intelligence enrichment.** Every observable (IP, domain, URL, email address) extracted from an event is checked against a self-hosted threat-intel platform. Hits are surfaced inline in the dashboard and also pushed back as new indicators after an analyst confirms a true positive, so the threat-intel instance grows from the SOC's own confirmed incidents over time.
 
