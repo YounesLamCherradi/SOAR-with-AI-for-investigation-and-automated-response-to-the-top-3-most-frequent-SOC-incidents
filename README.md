@@ -14,14 +14,7 @@ This project was built as a graduation/PFE project simulating a real-world SOC e
 
 ![SOAR detection-to-response pipeline](./assets/diagram.png)
 
-
-
-
-| Module | Data source | Detection logic |
-|---|---|---|
-| Phishing | Live mailbox (SMTP capture) | IOC extraction (URLs, domains, IPs, sender) + sandboxed analyzer enrichment |
-| Web Attacks | Simulated WAF/IDS log stream | Per-source-IP campaign correlation across attack types (SQLi, XSS, RCE, brute force, port scans, directory traversal) |
-| Active Directory | Windows Event Logs via Winlogbeat → Logstash | Brute-force / credential-attack correlation per source IP over a rolling time window |
+![SOAR detection-to-response pipeline](./assets/tools_stack_overview.png)
 
 ---
 
