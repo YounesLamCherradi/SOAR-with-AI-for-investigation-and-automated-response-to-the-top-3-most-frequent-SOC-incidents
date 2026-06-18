@@ -1,4 +1,3 @@
-# SOAR
 ![SOAR detection-to-response pipeline](./assets/title.png)
 
 
