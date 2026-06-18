@@ -52,6 +52,13 @@ The backend is a Django application using an ASGI server for real-time delivery;
 
 ---
 
+## Graph-based reasoning
+ 
+Two of the three modules don't just score events in isolation — they reason over an actual graph. The phishing module builds a NetworkX directed graph of normal sender-receiver relationships across the organization (who manages whom, who's a colleague, who communicates frequently); an email between two people with no edge between them is treated as a real signal, on top of the usual SPF/DKIM and content checks. The Active Directory module goes further: it parses a BloodHound export into a NetworkX graph of privilege relationships (GenericWrite, DCSync, WriteOwner, and similar edges) and runs `shortest_path` from every user to Domain Admin, so each account's baseline risk score is literally "how many hops from full compromise." The web attacks module renders its own attack-path graph showing which infrastructure component a given attack actually reached, but that one is a fixed topology visualization rather than a NetworkX computation.
+ 
+![Graph-based reasoning by module](./assets/networkx-usage.png)
+
+
 ## Views
 
 **Analyst.** The day-to-day working surface — a personal queue split by module, a campaign or alert detail panel carrying the AI analysis and threat-intel hits, and the gated assign → verdict → contain → close sequence described above.
