@@ -92,3 +92,5 @@ Mean time to respond (MTTR) was tracked across all three modules against a manua
 ## Demo scenarios
 
 The platform ships with simulator scripts (not included in this repo) that generate realistic, multi-stage attack campaigns against each module — multi-vector web attacks from several attacker IPs, a mixed batch of phishing and legitimate emails using real-but-defanged malicious indicators, and brute-force/credential-attack campaigns against Active Directory — to demonstrate the full detect → correlate → analyze → enrich → respond → document loop without requiring a live attacker.
+
+A full walkthrough of the platform in action is available here: [Demo video](https://youtube.com/your-video-link)
