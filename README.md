@@ -1,4 +1,6 @@
 # SOAR
+![SOAR detection-to-response pipeline](./assets/architecture.png)
+
 
 A full-stack Security Orchestration, Automation and Response platform built to demonstrate end-to-end SOC workflows: detection, AI-assisted triage, threat intelligence enrichment, and automated response — across phishing email, web application attacks, and Active Directory threats.
 
